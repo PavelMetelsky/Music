@@ -1,0 +1,84 @@
+.mentorFrame{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: 0px;
+    top: 190px;
+
+    background: #EDF1F6;
+    border-radius: 10px;
+}
+
+.studentFrame{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    left: 210px;
+    top: 190px;
+
+    background: #EDF1F6;
+    border-radius: 10px;
+}
+.FrameHover:hover{
+    border: 1px solid #9D9D9D;
+    background: #FFFFFF;
+}
+
+.mentorIcon{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    left: 63px;
+    top: 50px;
+}
+
+.studentIcon{
+    position: absolute;
+    width: 40px;
+    height: 64px;
+    left: 75.16px;
+    top: 43px;
+}
+
+.mentorTXT{
+    position: absolute;
+    width: 140px;
+    height: 26px;
+    left: 25px;
+    top: 124px;
+}
+
+.studentTXT{
+    position: absolute;
+    width: 140px;
+    height: 26px;
+    left: 25px;
+    top: 124px;
+}
+
+.H3-MIFORTE{
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+.done{
+    position: absolute;
+    width: 14px;
+    height: 12px;
+    left:  156px;
+    top: 20px;
+}
+
+.doneTick{
+    position: absolute;
+    width: 10px;
+    height: 7px;
+    left: 2px;
+    top: 2px;
+}
