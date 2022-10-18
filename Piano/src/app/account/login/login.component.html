@@ -1,0 +1,15 @@
+<div class="p-fluid formgrid grid">
+  <div class="field">
+    <label for="login">Login</label>
+    <input #login="ngModel" id="login" type="text" required pInputText [(ngModel)]="model.email" placeholder="Логин" />
+  </div>
+  <div class="field">
+    <label for="password">Password</label>
+    <p-password #password="ngModel" id="password" [(ngModel)]="model.password" placeholder="Пароль" required
+      [feedback]="false" [toggleMask]="true"></p-password>
+  </div>
+  <div>
+    <p-button label="Login" (onClick)="toLogin()" styleClass="p-button-link"></p-button>
+    <p-button label="SignUp" (onClick)="toSignup()" styleClass="p-button-link"></p-button>
+  </div>
+</div>

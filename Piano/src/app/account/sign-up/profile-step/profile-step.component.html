@@ -1,0 +1,92 @@
+<div class="stepsdemo-content">
+  <p-card>
+    <ng-template pTemplate="content">
+      <div class="p-fluid formgrid grid">
+        <div class="field">
+          <label for="fullName">FullName</label>
+          <input #fullName="ngModel" id="fullName" type="text" required pInputText
+            [(ngModel)]="paymentInformation.fullName" placeholder="Страна" [ngClass]="{
+              'ng-dirty':
+                (fullName.invalid && submitted) ||
+                (fullName.dirty && fullName.invalid)
+            }" />
+          <small *ngIf="
+              (fullName.invalid && submitted) ||
+              (fullName.dirty && fullName.invalid)
+            " class="p-error">Full name is required.</small>
+        </div>
+        <div class="field">
+          <label for="login">Login</label>
+          <input #login="ngModel" id="login" type="text" required pInputText [(ngModel)]="paymentInformation.login"
+            placeholder="Страна" [ngClass]="{
+              'ng-dirty':
+                (login.invalid && submitted) ||
+                (login.dirty && login.invalid)
+            }" />
+          <small *ngIf="
+              (login.invalid && submitted) ||
+              (login.dirty && login.invalid)
+            " class="p-error">Login is required.</small>
+        </div>
+        <div class="field">
+          <label for="password">Password</label>
+          <p-password #password="ngModel" id="password" [(ngModel)]="paymentInformation.password" placeholder="Пароль"
+            required [feedback]="false" [toggleMask]="true" [ngClass]="{
+            'ng-dirty':
+              (password.invalid && submitted) ||
+              (password.dirty && password.invalid)
+          }"></p-password>
+          <small *ngIf="
+          (password.invalid && submitted) ||
+          (password.dirty && password.invalid)
+        " class="p-error">Password is required.</small>
+        </div>
+
+        <div class="field">
+          <label for="confirm">Confirm Password</label>
+          <p-password #confirm="ngModel" id="confirm" [(ngModel)]="paymentInformation.confirm" placeholder="Пароль"
+            required [feedback]="false" [toggleMask]="true" [ngClass]="{
+            'ng-dirty':
+              (confirm.invalid && submitted) ||
+              (confirm.dirty && confirm.invalid)
+          }"></p-password>
+          <small *ngIf="
+          (confirm.invalid && submitted) ||
+          (confirm.dirty && confirm.invalid)
+        " class="p-error">Confirm is required.</small>
+        </div>
+
+        <div>
+          <div class="field">
+            <label for="links">Link</label>
+            <input #links="ngModel" id="link" type="text" pInputText [(ngModel)]="paymentInformation.links"
+              placeholder="соц сеть" />
+          </div>
+        </div>
+
+        <!-- <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+
+          <button type="button" (click)="addQuantity()" class="btn btn-primary">Add More</button>
+
+          <div formArrayName="quantities">
+            <span *ngFor="let quantity of quantities().controls; let i=index" [formGroupName]="i">
+              <div class="field">
+                <label for="link">Link</label>
+                <input type="text" formControlName="link" placeholder="соц сеть">
+              </div>
+            </span>
+          </div>
+        </form>
+
+        <button type="submit" class="btn btn-success">Submit</button> -->
+
+      </div>
+    </ng-template>
+    <ng-template pTemplate="footer">
+      <div class="grid grid-nogutter justify-content-between">
+        <p-button label="Back" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button>
+        <p-button type="submit" label="Next" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right"></p-button>
+      </div>
+    </ng-template>
+  </p-card>
+</div>

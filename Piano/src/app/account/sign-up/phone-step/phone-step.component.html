@@ -1,0 +1,98 @@
+<div class="stepsdemo-content">
+  <p-card>
+    <ng-template pTemplate="content">
+      <div class="p-fluid" fxLayout="column" fxLayoutAlign="center center">
+        <div class="field">
+          <label for="country">Country</label>
+          <input #country="ngModel" id="country" type="text" required pInputText [(ngModel)]="seatInformation.country"
+            placeholder="Страна" [ngClass]="{
+              'ng-dirty':
+                (country.invalid && submitted) ||
+                (country.dirty && country.invalid)
+            }" />
+          <small *ngIf="
+              (country.invalid && submitted) ||
+              (country.dirty && country.invalid)
+            " class="p-error">Country is required.</small>
+        </div>
+        <div class="field">
+          <label for="city">city</label>
+          <input #city="ngModel" id="city" type="text" required pInputText [(ngModel)]="seatInformation.city" [ngClass]="{
+              'ng-dirty':
+                (city.invalid && submitted) ||
+                (city.dirty && city.invalid)
+            }" />
+          <small *ngIf="
+              (city.invalid && submitted) ||
+              (city.dirty && city.invalid)
+            " class="p-error">city is required.</small>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <p-inputMask mask="(999) 999-9999" #phone="ngModel" id="phone" type="text" required
+            [(ngModel)]="seatInformation.phone" [ngClass]="{
+              'ng-dirty':
+                (phone.invalid && submitted) ||
+                (phone.dirty && phone.invalid)
+            }">
+          </p-inputMask>
+          <small *ngIf="
+              (phone.invalid && submitted) ||
+              (phone.dirty && phone.invalid)
+            " class="p-error">Phone is required.</small>
+        </div>
+
+        <!-- <div class="field">
+          <label for="age">Age</label>
+          <input #age="ngModel" id="age" type="number" required pInputText [(ngModel)]="personalInformation.age"
+            [ngClass]="{
+              'ng-dirty':
+                (age.invalid && submitted) || (age.dirty && age.invalid)
+            }" />
+          <small class="p-error" *ngIf="(age.invalid && submitted) || (age.dirty && age.invalid)">Age is
+            required.</small>
+        </div> -->
+
+        <!-- <div class="field col-12 md:col-6">
+          <label for="class">Class</label>
+          <p-dropdown inputId="class" [(ngModel)]="seatInformation.class" [options]="classes"
+            (onChange)="setVagons($event)" optionLabel="name" placeholder="Select a Class"></p-dropdown>
+        </div>
+        <div class="field col-12 md:col-6">
+          <label for="wagon">Wagon</label>
+          <p-dropdown inputId="wagon" [(ngModel)]="seatInformation.wagon" [options]="vagons"
+            (onChange)="setSeats($event)" optionLabel="wagon" placeholder="Select a Wagon"></p-dropdown>
+        </div>
+        <div class="field col-12">
+          <label for="seat">Seat</label>
+          <p-dropdown inputId="seat" [(ngModel)]="seatInformation.seat" [options]="seats" optionLabel="seat"
+            placeholder="Select a Seat"></p-dropdown>
+        </div> -->
+      </div>
+    </ng-template>
+    <ng-template pTemplate="footer">
+      <div class="grid grid-nogutter justify-content-between">
+        <p-button label="Back" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button>
+        <p-button label="Next" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right"></p-button>
+      </div>
+    </ng-template>
+  </p-card>
+</div>
+
+<!-- <div class="base">
+  <div class="input-pos-1">
+    <div class="container">
+      <input formControlName="country" placeholder="Страна">
+    </div>
+  </div>
+  <div class="input-pos-2">
+    <div class="container">
+      <input formControlName="town" placeholder="Город">
+    </div>
+  </div>
+  <div class="input-pos-3">
+    <div class="container">
+      <input formControlName="phone" placeholder="Номер телефона с кодом">
+    </div>
+  </div>
+</div> -->

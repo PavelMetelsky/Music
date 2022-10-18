@@ -1,0 +1,202 @@
+// :host ::ng-deep b {
+//   display: block
+// }
+
+// :host ::ng-deep .p-card-body {
+//   padding: 2rem;
+// }
+
+p-sign-up {
+
+  .content {
+
+    width: 500px;
+    margin-top: 150px;
+
+    .rejectReg {
+      position: absolute;
+      width: 210px;
+      height: 21px;
+      left: 1130px;
+      top: 31px;
+    }
+
+    .activeLinkBig {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
+      display: flex;
+      align-items: center;
+      text-align: right;
+    }
+
+    .active {
+      color: #3F71E6;
+    }
+
+    .content {
+      position: absolute;
+      width: 400px;
+      height: 507px;
+      left: 520px;
+      top: 184px;
+    }
+
+    .text {
+      position: absolute;
+      width: 400px;
+      height: 38px;
+      left: calc(50% - 400px/2);
+      top: 0px;
+    }
+
+    .registration {
+      position: absolute;
+      width: 399px;
+      height: 38px;
+      left: 0px;
+      top: 0px;
+    }
+
+    .H2-MIFORTE {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 38px;
+
+      display: block;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #000000;
+    }
+
+    .steps {
+      position: absolute;
+      width: 236px;
+      height: 28px;
+      left: 79px;
+      top: 78px;
+    }
+
+    .elipse1 {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 2px;
+      top: 2px;
+    }
+
+    .elipse-passed {
+      fill: #86BAA4;
+      stroke-width: 4;
+      stroke: #86BAA4;
+    }
+
+    .elipse-current {
+      stroke-width: 4;
+      stroke: #86BAA4;
+    }
+
+    .elipse-inactive {
+      stroke-width: 4;
+      stroke: #EDF1F6;
+    }
+
+    .elipse2 {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 106px;
+      top: 2px;
+    }
+
+    .elipse3 {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      left: 210px;
+      top: 2px;
+    }
+
+    .rectangle1 {
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      left: 51px;
+      top: 12px;
+    }
+
+    .rectangle2 {
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      left: 155px;
+      top: 12px;
+    }
+
+    .rectangle-active {
+      fill: #86BAA4;
+    }
+
+    .rectangle-inactive {
+      fill: #EDF1F6;
+    }
+
+    .btn-sbm-pos {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 70px;
+
+      position: absolute;
+      width: 192px;
+      height: 47px;
+      left: calc(50% - 192px/2);
+      top: calc(50% - 47px/2 + 230px);
+    }
+
+    .inactiveButton {
+      background: #B1C6BD;
+      border-radius: 5px;
+    }
+
+    .activeButton {
+      background: #59A686;
+      border-radius: 5px;
+    }
+
+    .enter {
+      position: static;
+      width: 52px;
+      height: 19px;
+      left: 70px;
+      top: 14px;
+    }
+
+    .txt-buttonMIFORTE {
+      font-family: 'Raleway';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+
+      display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: #FFFFFF;
+
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+      margin: 0px 10px;
+    }
+  }
+}

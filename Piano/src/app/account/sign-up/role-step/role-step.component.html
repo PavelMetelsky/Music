@@ -1,0 +1,18 @@
+<div class="stepsdemo-content">
+  <p-card>
+    <ng-template pTemplate="content">
+      <div class="p-fluid" fxLayoutAlign="center center">
+        <p-selectButton [options]="options" [(ngModel)]="personalInformation.role" optionValue="role">
+          <ng-template let-item>
+            <img class="icon" [src]="item.img">
+          </ng-template>
+        </p-selectButton>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="footer">
+      <div fxLayoutAlign="center center">
+        <p-button label="Next" (onClick)="nextPage()" icon="pi pi-angle-right" iconPos="right"></p-button>
+      </div>
+    </ng-template>
+  </p-card>
+</div>

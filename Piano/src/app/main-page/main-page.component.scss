@@ -1,0 +1,185 @@
+.headerButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 70px;
+
+  position: absolute;
+  width: 150px;
+  height: 47px;
+  left: calc(50% - 150px/2 + 545px);
+  top: calc(50% - 47px/2 + 3.5px);
+
+  /* MIFORTE */
+
+  background: #59A686;
+  border-radius: 8px; // 5px
+  border-width: 0;
+}
+
+
+
+.headerButtonText {
+  position: static;
+  left: 28px;
+  top: 14px;
+
+  /* buttonMIFORTE */
+
+  //font-family: 'Raleway';
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #FFFFFF;
+
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 10px;
+}
+
+.mainPageHeader {
+  padding: 0;
+  position: absolute;
+  width: 99%;
+  height: 84px;
+}
+
+.headerLinks {
+  //font-family: 'Raleway';
+  font-family: Arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.headerLink {
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.yourPlaceOfPowerText {
+  position: absolute;
+  margin-top: 166px;
+  width: 99%;
+  text-align: center;
+  font-family: Arial; //'Raleway';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 56px;
+}
+
+.firstOnlinePlatform {
+  position: absolute;
+  margin-top: 247px;
+  width: 99%;
+  text-align: center;
+  font-family: Arial; // 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.backgroundPicture1 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin-top: 84px;
+  display: block;
+  height: 778px;
+  background-size: 100%;
+}
+
+.videoOuterContainer {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 99.4%;
+  height: 724px;
+  top: 601px;
+}
+
+.videoInnerContainer {
+  width: 1240px;
+  height: 100%;
+  background-color: #FFFFFF;
+
+}
+
+.video {
+
+  margin: 48px;
+  height: 628px;
+  width: available;
+  background-size: contain;
+}
+
+.bigGreenDiv {
+  width: 100%;
+  padding: 0;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: 862px 0 0;
+  height: 2490px;
+  background: #86BAA4;
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+}
+
+.bigGreenDivText {
+  margin-top: 597px;
+  color: white;
+  font-size: 50px;
+}
+
+.firstContent {
+  position: relative;
+  width: 498px;
+  height: 257px;
+  left: 431px;
+  top: 41px;
+}
+
+.firstContent #header {
+  font-family: Arial; //'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+}
+
+.firstContent #text {
+
+  color: black;
+  font-family: Arial; //'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+}

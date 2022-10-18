@@ -1,0 +1,55 @@
+<div class="stepsdemo-content">
+  <p-card>
+    <ng-template pTemplate="content">
+      <div class="field col-12">
+        <label for="class">role</label>
+        <b>{{
+          ticketInformation.personalInformation?.role
+          }}</b>
+      </div>
+      <div class="field col-12">
+        <label for="class">country</label>
+        <b>{{
+          ticketInformation.seatInformation?.country
+          }}</b>
+      </div>
+      <div class="field col-12">
+        <label for="class">city</label>
+        <b>{{
+          ticketInformation.seatInformation?.city
+          }}</b>
+      </div>
+      <div class="field col-12">
+        <label for="class">phone</label>
+        <b>{{
+          ticketInformation.seatInformation?.phone
+          }}</b>
+      </div>
+      <div class="field col-12">
+        <label for="class">fullName</label>
+        <b>{{
+          ticketInformation.paymentInformation?.fullName
+          }}</b>
+      </div>
+      <div class="field col-12">
+        <label for="class">login</label>
+        <b>{{
+          ticketInformation.paymentInformation?.login
+          }}</b>
+      </div>
+      <div class="field col-12">
+        <label for="class">links</label>
+        <b>{{
+          ticketInformation.paymentInformation?.links
+          }}</b>
+      </div>
+    </ng-template>
+    <ng-template pTemplate="footer">
+      <div class="grid grid-nogutter justify-content-between">
+        <p-button label="Back" (onClick)="prevPage()" icon="pi pi-angle-left"></p-button>
+        <p-button label="Complete" (onClick)="complete()" icon="pi pi-angle-right" iconPos="right"
+          styleClass="p-button-success"></p-button>
+      </div>
+    </ng-template>
+  </p-card>
+</div>

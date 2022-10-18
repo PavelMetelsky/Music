@@ -1,0 +1,94 @@
+<div fxLayout>
+  <div fxFlex="1 1 auto" fxLayout="column" class="panel">
+    <div class="panel-header" fxFlex="0 0 55px">
+      <span class="title">
+        My Profile
+      </span>
+    </div>
+    <div fxFlex="1 1 auto" fxFill class="panel-body">
+      <span #top></span>
+      <div class="body-content" fxLayout="column">
+        <div fxFlex="1 1 100%" fxFill fxLayout  fxLayoutAlign="center">
+          <div *ngIf="userModel && userModel.email != null || true" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 550px">
+
+            <div class="panel flat">
+              <div class="panel-body">
+                <form #profileForm="ngForm" fxLayout="column" fxLayoutAlign="space-evenly center">
+                  
+                  <div fxLayout="column">
+                    <div fxLayout="space-evenly start">
+                      <label for="Username">Username</label>
+                    </div>
+
+                    <form-group [label]="Username" [value]="userModel.Username">
+                      <input readonly disabled type="text" [(ngModel)]="userModel.username" placeholder="Username"
+                        name="Username" pInputText>
+                    </form-group>
+                  </div>
+                  <div fxLayout="column" fxLayout="space-evenly start">
+                    <div>
+                      <label for="Email">Email</label>
+                    </div>
+                    <form-group [label]="Email" [value]="userModel.Email">
+                      <input readonly disabled type="text" [(ngModel)]="userModel.email" placeholder="Email" name="Email"
+                        pInputText>
+                    </form-group>
+                  </div>
+                  <div fxLayout="column" fxLayoutAlign="space-around center">
+                    <div fxLayout="space-evenly start">
+                      <label for="Telephone">Telephone</label>
+                    </div>
+                    <form-group [label]="Telephone" [value]="userModel.Telephone">
+                      <input readonly disabled type="text" [(ngModel)]="userModel.telephone" placeholder="Telephone"
+                        name="Telephone" pInputText>
+                    </form-group>
+                  </div>
+
+                  <div fxLayout="column" fxLayoutAlign="space-around center">
+                    <div>
+                      <label for="Role">Role</label>
+                    </div>
+                    <form-group [label]="Role" [value]="userModel.Role">
+                      <input readonly disabled type="text" [(ngModel)]="userModel.role" placeholder="Role" name="Role"
+                        pInputText>
+                    </form-group>
+                  </div>
+                  <div fxLayout="column" fxLayoutAlign="space-around center">
+                    <div>
+                      <label for="Country">Country</label>
+                    </div>
+                    <form-group [label]="Country" [value]="userModel.Country">
+                      <input readonly disabled type="text" [(ngModel)]="userModel.country" placeholder="Country"
+                        name="Country" pInputText>
+                    </form-group>
+                  </div>
+                  <div fxLayout="column" fxLayoutAlign="space-around center">
+                    <div>
+                      <label for="City">City</label>
+                    </div>
+                    <form-group [label]="City" [value]="userModel.City">
+                      <input readonly disabled type="text" [(ngModel)]="userModel.city" placeholder="City" name="City"
+                        pInputText>
+                    </form-group>
+                  </div>
+
+                </form>
+              </div>
+              <!-- <div class="panel-footer">
+                <div class="actions">
+                  <div class="right">
+                    <button pButton label="Save Changes" class="primary" type="submit"
+                      (click)="saveChanges(profileForm.form); top.scrollIntoView();"></button>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p-button label="Go to main page" (onClick)="onMainPage()" icon="pi pi-angle-left"></p-button>
+
+  </div>
+</div>

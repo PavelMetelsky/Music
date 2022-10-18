@@ -1,0 +1,26 @@
+p-profile {
+  .primary-user-email {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 3px;
+  }
+
+  .primary-user-label .form-group>label {
+    padding-bottom: 18px;
+  }
+
+  form-group {
+    context-help {
+      display: inline-block;
+      margin-left: 5px;
+      height: 16px;
+
+      i.ci {
+        font-size: 18px;
+        cursor: pointer !important;
+        margin-top: -3px;
+        display: inline-block;
+      }
+    }
+  }
+}
