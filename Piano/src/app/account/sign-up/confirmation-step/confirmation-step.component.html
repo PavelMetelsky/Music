@@ -1,47 +1,51 @@
-<div class="stepsdemo-content">
+<div class="stepsdemo-content" fxLayoutAlign="center center">
   <p-card>
     <ng-template pTemplate="content">
-      <div class="field col-12">
-        <label for="class">role</label>
-        <b>{{
-          ticketInformation.personalInformation?.role
-          }}</b>
-      </div>
-      <div class="field col-12">
-        <label for="class">country</label>
-        <b>{{
-          ticketInformation.seatInformation?.country
-          }}</b>
-      </div>
-      <div class="field col-12">
-        <label for="class">city</label>
-        <b>{{
-          ticketInformation.seatInformation?.city
-          }}</b>
-      </div>
-      <div class="field col-12">
-        <label for="class">phone</label>
-        <b>{{
-          ticketInformation.seatInformation?.phone
-          }}</b>
-      </div>
-      <div class="field col-12">
-        <label for="class">fullName</label>
-        <b>{{
-          ticketInformation.paymentInformation?.fullName
-          }}</b>
-      </div>
-      <div class="field col-12">
-        <label for="class">login</label>
-        <b>{{
-          ticketInformation.paymentInformation?.login
-          }}</b>
-      </div>
-      <div class="field col-12">
-        <label for="class">links</label>
-        <b>{{
-          ticketInformation.paymentInformation?.links
-          }}</b>
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <div>
+          <div class="field col-12">
+            <label for="class">role</label>
+            <b>{{
+              ticketInformation.personalInformation?.role
+              }}</b>
+          </div>
+          <div class="field col-12">
+            <label for="class">country</label>
+            <b>{{
+              ticketInformation.seatInformation?.country
+              }}</b>
+          </div>
+          <div class="field col-12">
+            <label for="class">city</label>
+            <b>{{
+              ticketInformation.seatInformation?.city
+              }}</b>
+          </div>
+          <div class="field col-12">
+            <label for="class">phone</label>
+            <b>{{
+              ticketInformation.seatInformation?.phone
+              }}</b>
+          </div>
+          <div class="field col-12">
+            <label for="class">fullName</label>
+            <b>{{
+              ticketInformation.paymentInformation?.fullName
+              }}</b>
+          </div>
+          <div class="field col-12">
+            <label for="class">login</label>
+            <b>{{
+              ticketInformation.paymentInformation?.login
+              }}</b>
+          </div>
+          <div class="field col-12">
+            <label for="class">links</label>
+            <b>{{
+              ticketInformation.paymentInformation?.links
+              }}</b>
+          </div>
+        </div>
       </div>
     </ng-template>
     <ng-template pTemplate="footer">
